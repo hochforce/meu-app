@@ -1,9 +1,15 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, Dimensions } from "react-native"
+
+const { height } = Dimensions.get("window")
 
 export default StyleSheet.create({
+  scroll:{
+    height: "100%"
+  },
   container:{
     flex: 1,
     width: "100%",
+    height: height,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
